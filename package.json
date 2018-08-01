@@ -1,6 +1,7 @@
 {
     "name": "code-reminder",
     "displayName": "code-reminder",
+    "repository": "https://github.com/giovannyreyeso/code-reminder",
     "description": "",
     "version": "0.0.1",
     "publisher": "giovannyreyeso",

@@ -1,7 +1,7 @@
 # Before you install!! 
 You need vscode ^1.25.0
 
-# Code Reminder v0.0.3
+# Code Reminder v0.0.4
 
 Remind commands is now easy, just add commands to vscode preferences/settings and use ctrl+alt+v (Linux/Windows) or ctrl+v (Mac)
 

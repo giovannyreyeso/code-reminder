@@ -3,7 +3,7 @@
     "displayName": "Code Reminder",
     "repository": "https://github.com/giovannyreyeso/code-reminder",
     "description": "Easy way to reminder little pieces code!",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "giovannyreyeso",
     "engines": {
         "vscode": "^1.25.0"
@@ -21,6 +21,11 @@
                 "command": "code-reminder.execute",
                 "category": "Code reminder",
                 "title": "Paste reminder code"
+            },
+            {
+                "command": "code-reminder.execute-back",
+                "category": "Code reminder",
+                "title": "Paste reminder code"
             }
         ],
         "keybindings": [
@@ -28,6 +33,11 @@
                 "command": "code-reminder.execute",
                 "key": "ctrl+alt+v",
                 "mac": "ctrl+v"
+            },
+            {
+                "command": "code-reminder.execute-back",
+                "key": "ctrl+alt+c",
+                "mac": "ctrl+c"
             }
         ],
         "configuration": {

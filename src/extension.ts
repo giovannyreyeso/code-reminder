@@ -6,10 +6,8 @@ import * as codeReminder from './code-reminder';
 
 
 export function activate(context: vscode.ExtensionContext) {
-    
-    let position = 0;
+
     let codeReminderConf = vscode.workspace.getConfiguration("code-reminder");
-   
     vscode.workspace.onDidChangeConfiguration(() => {
         codeReminderConf = vscode.workspace.getConfiguration("code-reminder");
     });
@@ -18,22 +16,9 @@ export function activate(context: vscode.ExtensionContext) {
         if (!isValidConf(codeReminderConf)) {
             return;
         }
-        const len = codeReminderConf.reminder.length;
-        position = (position + 1)%len;
-        codeReminder.reminder(codeReminderConf.reminder[position]);
+        codeReminder.reminder(codeReminderConf.reminder);
     });
-
-    let back = vscode.commands.registerCommand('code-reminder.execute-back', () => {
-        if (!isValidConf(codeReminderConf)) {
-            return;
-        }
-        const len = codeReminderConf.reminder.length;
-        position = (position - 1 + len)%len;
-        codeReminder.reminder(codeReminderConf.reminder[position]);
-    });
-
     context.subscriptions.push(next);
-    context.subscriptions.push(back);
 }
 
 // this method is called when your extension is deactivated

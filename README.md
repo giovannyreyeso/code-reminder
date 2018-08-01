@@ -1,9 +1,12 @@
 # Before you install!! 
 You need vscode ^1.25.0
 
-# Code Reminder v0.0.4
+# Code Reminder v0.1.4
 
 Remind commands is now easy, just add commands to vscode preferences/settings and use ctrl+alt+v (Linux/Windows) or ctrl+v (Mac)
+
+### Changelog
+[Changelog](https://github.com/giovannyreyeso/code-reminder/blob/master/CHANGELOG.md)
 
 # Bugs
 
@@ -36,7 +39,8 @@ OR
 
 ## How i use it?
 Just need press `Ctrl+Alt+V` (Linux/Windows) or `Ctrl+V` on Mac
-Every time you press the command you will replace the text for next
+Every time you press the command you will show a list for select a item
+press enter for selected or click on the item
 
 ![imagen001](https://github.com/giovannyreyeso/code-reminder/raw/master/images/imagen001.gif)
 

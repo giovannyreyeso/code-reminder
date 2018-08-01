@@ -2,8 +2,8 @@
     "name": "code-reminder",
     "displayName": "Code Reminder",
     "repository": "https://github.com/giovannyreyeso/code-reminder",
-    "description": "",
-    "version": "0.0.2",
+    "description": "Easy way to reminder little pieces code!",
+    "version": "0.0.3",
     "publisher": "giovannyreyeso",
     "engines": {
         "vscode": "^1.25.0"

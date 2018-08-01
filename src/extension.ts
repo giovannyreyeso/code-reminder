@@ -6,6 +6,9 @@ import * as codeReminder from './code-reminder';
 export function activate(context: vscode.ExtensionContext) {
     let position = 0;
     let codeReminderConf = vscode.workspace.getConfiguration("code-reminder");
+    vscode.workspace.onDidChangeConfiguration(() => {
+        codeReminderConf = vscode.workspace.getConfiguration("code-reminder");
+    });
     let disposable = vscode.commands.registerCommand('code-reminder.execute', () => {
         if (codeReminderConf.reminder == undefined) {
             utils.showMessage(utils.MessageType.ERROR, "You need first add Preferences/Settings");

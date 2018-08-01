@@ -1,6 +1,6 @@
 {
     "name": "code-reminder",
-    "displayName": "code-reminder",
+    "displayName": "Code Reminder",
     "repository": "https://github.com/giovannyreyeso/code-reminder",
     "description": "",
     "version": "0.0.1",
@@ -12,7 +12,7 @@
         "Other"
     ],
     "activationEvents": [
-        "*"
+        "onCommand:code-reminder.execute"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -29,7 +29,28 @@
                 "key": "ctrl+alt+v",
                 "mac": "ctrl+v"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Code Reminder onfiguration",
+            "properties": {
+                "code-reminder.timeout": {
+                    "type": "number",
+                    "default": 10000,
+                    "description": "If timeout is greater than 0, then it will kill the child process if it runs longer than timeout milliseconds."
+                },
+                "code-reminder.maxBuffer": {
+                    "type": "number",
+                    "default": 204800,
+                    "description": "Specifies the largest amount of data allowed on stdout or stderr - if this value is exceeded then the child process is killed."
+                },
+                "code-reminder.killSignal": {
+                    "type": "string",
+                    "default": "SIGTERM",
+                    "description": "The child process is killed with killSignal. (SIGTERM || SIGINT || SIGKILL)"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

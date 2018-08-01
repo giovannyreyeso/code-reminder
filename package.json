@@ -3,7 +3,7 @@
     "displayName": "Code Reminder",
     "repository": "https://github.com/giovannyreyeso/code-reminder",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "giovannyreyeso",
     "engines": {
         "vscode": "^1.25.0"
